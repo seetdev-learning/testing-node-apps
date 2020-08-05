@@ -7,7 +7,7 @@ import {
 } from '../utils/auth'
 import * as usersDB from '../db/users'
 
-const authUserToJSON = user => ({
+const authUserToJSON = (user) => ({
   ...userToJSON(user),
   token: getUserToken(user),
 })
